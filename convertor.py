@@ -59,7 +59,7 @@ def txt_to_pdf(txt_file_path):
 
     pdf.set_font('Arial',size=12)
 
-    # виялвяти кодек перед відкритям файлу
+    #!виялвяти кодек перед відкритям файлу
     with open(txt_file_path,'r',encoding='UTF-8') as file:
         for line in file:
             pdf.cell(200,10,txt = line, ln=True)
