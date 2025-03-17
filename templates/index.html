@@ -9,15 +9,15 @@
 
     <h1>Завантажте файл і виберіть тип конвертації</h1>
 
-    <form action="submit" method="post">
+    <form action="submit" method="post" enctype="multipart/form-data">
         <div>
             <label for="file">Виберіть файл для завантаження: </label>
-            <input type="file" name="file" id="file" required>
+            <input type='file' name= 'file' id='file' required>
         </div>
 
         <div>   
             <label for = "conversion">Оберіть тип конвертації</label>
-            <select id = "conversion" name="'conversion" required>
+            <select id = "conversion" name="conversion" required>
 
                 <option value="pdf_to_word">PDF to Word</option>
                 <option value="word_to_pdf">Word to PDF</option>
